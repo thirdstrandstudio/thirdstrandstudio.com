@@ -1,0 +1,67 @@
+.gradientDivider {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(89.95deg, #65ff74, #ff00d6);
+  height: 0.313rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  max-width: 9.375rem;
+}
+.weAre {
+  margin: 0;
+}
+.heroStrapline,
+.heroStrapline1 {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+.heroStrapline {
+  line-height: 123%;
+  font-weight: 600;
+  max-width: 43.75rem;
+}
+.heroStrapline1 {
+  font-size: var(--font-size-base);
+  line-height: 160%;
+  max-width: 32.5rem;
+}
+.languageTitle,
+.languageTopSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.languageTitle {
+  width: 100%;
+  align-items: flex-start;
+  padding: var(--padding-11xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-41xl);
+  max-width: 67.5rem;
+}
+.languageTopSection {
+  align-self: stretch;
+  align-items: center;
+  padding: var(--padding-21xl) var(--padding-xs) var(--padding-41xl);
+  gap: var(--gap-3xs);
+  background-image: url(/public/language-top-section@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: var(--font-size-59xl);
+  color: var(--color-white);
+  font-family: var(--font-readex-pro);
+}
+@media screen and (max-width: 960px) {
+  .heroStrapline {
+    font-size: var(--font-size-35xl);
+  }
+}
+@media screen and (max-width: 570px) {
+  .heroStrapline {
+    font-size: var(--font-size-23xl);
+    line-height: 3.5rem;
+  }
+}

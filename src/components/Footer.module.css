@@ -1,0 +1,225 @@
+.frameChild,
+.frameItem {
+  top: 0;
+  background-color: var(--color-white);
+}
+.frameChild {
+  position: absolute;
+  left: 0;
+  width: 0.444rem;
+  height: 0.444rem;
+}
+.frameItem {
+  left: 1.763rem;
+}
+.frameInner,
+.frameItem,
+.rectangleDiv {
+  position: absolute;
+  width: 0.444rem;
+  height: 0.444rem;
+}
+.frameInner {
+  top: 1.325rem;
+  left: 1.763rem;
+  background-color: var(--color-white);
+}
+.rectangleDiv {
+  top: 0;
+  left: 2.206rem;
+  background-color: var(--color-fuchsia);
+}
+.frameChild1,
+.frameChild2,
+.frameChild3,
+.frameChild4 {
+  position: absolute;
+  top: 0.881rem;
+  left: 2.206rem;
+  background-color: var(--color-white);
+  width: 0.444rem;
+  height: 0.444rem;
+}
+.frameChild2,
+.frameChild3,
+.frameChild4 {
+  top: 1.325rem;
+  left: 0.444rem;
+  background-color: var(--color-springgreen-100);
+}
+.frameChild3,
+.frameChild4 {
+  top: 0.881rem;
+  background-color: var(--color-white);
+}
+.frameChild4 {
+  top: 0.444rem;
+}
+.frameChild5 {
+  top: 1.325rem;
+  left: 1.325rem;
+  background-color: var(--color-fuchsia);
+}
+.frameChild5,
+.frameChild6,
+.frameChild7 {
+  position: absolute;
+  width: 0.444rem;
+  height: 0.444rem;
+}
+.frameChild6 {
+  top: 0;
+  left: 0.881rem;
+  background-color: var(--color-springgreen-100);
+}
+.frameChild7 {
+  top: 0.444rem;
+  left: 1.325rem;
+  background-color: var(--color-white);
+}
+.rectangleParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.644rem;
+  height: 1.763rem;
+}
+.thirdStrandStudios {
+  position: absolute;
+  top: 0.563rem;
+  left: 3.4rem;
+  width: 11.3rem;
+  height: 0.763rem;
+}
+.frameParent {
+  width: 15.294rem;
+  position: relative;
+  height: 1.763rem;
+}
+.companyColumnHeader {
+  font-size: var(--font-size-sm);
+  color: var(--color-darkgray);
+}
+.companyColumnHeader,
+.services {
+  position: relative;
+  line-height: 160%;
+}
+.connect,
+.connectButton {
+  display: flex;
+  align-items: center;
+}
+.connect {
+  width: 8.125rem;
+  position: relative;
+  line-height: 123%;
+  font-weight: 500;
+  justify-content: center;
+  height: 2.5rem;
+  flex-shrink: 0;
+}
+.connectButton {
+  background: linear-gradient(89.95deg, #65ff74, #ff00d6);
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+  color: var(--color-black);
+}
+.column01 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-4xl);
+  min-width: 8.125rem;
+}
+.footerContainer,
+.links {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.links {
+  display: none;
+  justify-content: flex-start;
+  gap: var(--gap-106xl);
+}
+.footerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-3xs) var(--padding-11xl);
+  box-sizing: border-box;
+  max-width: 67.5rem;
+}
+.divider {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--color-gray-700);
+  height: 0.188rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.thirdStrandStudio1 {
+  text-decoration: underline;
+}
+.thirdStrandStudioLtd147 {
+  color: inherit;
+}
+.thirdStrandStudio {
+  flex: 1;
+  position: relative;
+  line-height: 160%;
+  display: inline-block;
+  min-width: 5.625rem;
+}
+.privacyLegal {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.bottomFooter,
+.bottomFooterInfo {
+  align-self: stretch;
+  align-items: flex-start;
+}
+.bottomFooterInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bottomFooter {
+  gap: var(--gap-base);
+}
+.bottomFooter,
+.bottomFooterContainer,
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.bottomFooterContainer {
+  width: 100%;
+  align-items: flex-start;
+  padding: var(--padding-11xl);
+  box-sizing: border-box;
+  max-width: 67.5rem;
+}
+.footer {
+  align-self: stretch;
+  background-color: var(--color-gray-800);
+  align-items: center;
+  padding: var(--padding-21xl) 0 var(--padding-41xl);
+  gap: var(--gap-3xs);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-readex-pro);
+  margin-top: 2rem;
+}

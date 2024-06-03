@@ -1,0 +1,52 @@
+.checkboxChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 2.59px;
+  background-color: var(--color-springgreen-100);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.checkboxItem {
+  position: absolute;
+  top: 0.406rem;
+  left: 0.244rem;
+  width: 1.013rem;
+  height: 0.731rem;
+}
+.checkbox {
+  width: 1.5rem;
+  position: relative;
+  height: 1.5rem;
+}
+.example1Title {
+  flex: 1;
+  position: relative;
+  line-height: 123%;
+}
+.specialityExample1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.specialityExample1Parent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-family: var(--font-readex-pro);
+}
+@media screen and (max-width: 570px) {
+  .specialityExample1Parent {
+    flex: unset;
+    align-self: stretch;
+  }
+}

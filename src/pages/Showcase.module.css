@@ -1,0 +1,94 @@
+.atThirdStrand {
+  margin: 0;
+}
+.heroStrapline,
+.showcaseOverview {
+  width: 100%;
+  position: relative;
+  line-height: 160%;
+  display: inline-block;
+  max-width: 67.5rem;
+}
+.heroStrapline {
+  font-size: var(--font-size-17xl);
+  line-height: 123%;
+  text-align: center;
+}
+.showcaseContent01 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xs);
+  gap: var(--gap-21xl);
+  text-align: left;
+  font-size: var(--font-size-lg);
+}
+.showcaseImage02Icon {
+  align-self: stretch;
+  max-width: 100%;
+  overflow: hidden;
+  height: 21.875rem;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.heroStrapline2,
+.heroStrapline3 {
+  width: 100%;
+  position: relative;
+  line-height: 123%;
+  display: inline-block;
+  max-width: 67.5rem;
+}
+.heroStrapline3 {
+  font-size: var(--font-size-lg);
+  line-height: 160%;
+  text-align: left;
+}
+.showcaseContent02 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xs);
+  gap: var(--gap-21xl);
+}
+.mortgageCalculatorEmpowerC {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-5xl);
+}
+.heroStrapline7 {
+  width: 100%;
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 200%;
+  text-align: left;
+  display: inline-block;
+  max-width: 67.5rem;
+}
+.showcaseImage03Icon {
+  align-self: stretch;
+  max-width: 100%;
+  overflow: hidden;
+  height: 34.375rem;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.showcase01 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-41xl);
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-white);
+  font-family: var(--font-readex-pro);
+}

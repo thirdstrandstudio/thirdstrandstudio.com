@@ -1,0 +1,50 @@
+.technologies1Title,
+.technologies1Title1 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 123%;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: center;
+}
+.technologies1Title1 {
+  color: var(--color-springgreen-100);
+}
+.techTile,
+.technologies1TitleParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.technologies1TitleParent {
+  align-self: stretch;
+  gap: var(--gap-xs);
+}
+.techTile {
+  cursor: pointer;
+  border: 1px solid var(--color-springgreen-500);
+  padding: var(--padding-2xl-8);
+  background-color: var(--color-gray-300);
+  flex: 1;
+  border-radius: var(--br-7xs);
+  gap: var(--gap-21xl-2);
+}
+.techTile:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0.04)
+    ),
+    #141414;
+  border: 1px solid var(--color-springgreen-300);
+  box-sizing: border-box;
+}
+.techTile:active {
+  background: linear-gradient(#000, #000), #141414;
+}
+@media screen and (max-width: 420px) {
+  .technologies1TitleParent {
+    display: none;
+  }
+}

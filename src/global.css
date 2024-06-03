@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-readex-pro: "Readex Pro";
+  --font-poppins: Poppins;
+
+  /* font sizes */
+  --font-size-base: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-xs: 0.75rem;
+  --font-size-xl: 1.25rem;
+  --font-size-11xl: 1.875rem;
+  --font-size-17xl: 2.25rem;
+  --font-size-lg: 1.125rem;
+  --font-size-59xl: 4.875rem;
+  --font-size-35xl: 3.375rem;
+  --font-size-23xl: 2.625rem;
+  --font-size-51xl: 4.375rem;
+  --font-size-29xl: 3rem;
+
+  /* Colors */
+  --color-gray-100: #1e272b;
+  --color-gray-200: #181818;
+  --color-gray-300: #141414;
+  --color-gray-400: rgba(255, 255, 255, 0.8);
+  --color-gray-500: rgba(30, 39, 43, 0.3);
+  --color-gray-600: rgba(0, 0, 0, 0.2);
+  --color-gray-700: rgba(255, 255, 255, 0.1);
+  --color-gray-800: rgba(35, 35, 35, 0.8);
+  --color-white: #fff;
+  --color-darkgray: #adadad;
+  --color-black: #000;
+  --color-springgreen-100: #65ff74;
+  --color-springgreen-200: #69f977;
+  --color-springgreen-300: rgba(100, 255, 116, 0.8);
+  --color-springgreen-400: rgba(101, 255, 116, 0.4);
+  --color-springgreen-500: rgba(101, 255, 116, 0.2);
+  --color-fuchsia: #ff00d6;
+  --color-plum-100: #b281a5;
+  --color-darkmagenta: #bc27a4;
+
+  /* Gaps */
+  --gap-3xs: 0.625rem;
+  --gap-base: 1rem;
+  --gap-106xl: 7.812rem;
+  --gap-4xl: 1.437rem;
+  --gap-5xl: 1.5rem;
+  --gap-41xl: 3.75rem;
+  --gap-xl: 1.25rem;
+  --gap-38xl: 3.562rem;
+  --gap-8xl: 1.687rem;
+  --gap-27xl: 2.875rem;
+  --gap-31xl: 3.125rem;
+  --gap-29xl: 3rem;
+  --gap-lgi: 1.187rem;
+  --gap-mid: 1.062rem;
+  --gap-21xl-2: 2.512rem;
+  --gap-xs: 0.75rem;
+  --gap-sm: 0.875rem;
+  --gap-17xl: 2.25rem;
+  --gap-101xl: 7.5rem;
+  --gap-26xl: 2.812rem;
+  --gap-21xl: 2.5rem;
+  --gap-9xl: 1.75rem;
+
+  /* Paddings */
+  --padding-21xl: 2.5rem;
+  --padding-41xl: 3.75rem;
+  --padding-11xl: 1.875rem;
+  --padding-3xs: 0.625rem;
+  --padding-xs: 0.75rem;
+  --padding-29xl: 3rem;
+  --padding-5xl: 1.5rem;
+  --padding-mini: 0.937rem;
+  --padding-xl: 1.25rem;
+  --padding-base: 1rem;
+  --padding-7xs: 0.375rem;
+  --padding-2xl-8: 1.362rem;
+  --padding-12xs: 0.062rem;
+  --padding-4xs: 0.562rem;
+  --padding-lgi: 1.187rem;
+
+  /* Border radiuses */
+  --br-7xs: 6px;
+  --br-xs: 12px;
+  --br-9xs: 4px;
+  --br-7xs-2: 5.2px;
+  --br-10xs-6: 2.6px;
+}
