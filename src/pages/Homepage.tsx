@@ -3,7 +3,6 @@ import HeaderContainer from "../components/HeaderContainer";
 import TimelineTile from "../components/TimelineTile";
 import TopTile from "../components/TopTile";
 import TechTile from "../components/TechTile1";
-import Nod from "../components/Nod";
 import CaseStudies from "../components/CaseStudies";
 import ServicesContainer from "../components/ServicesContainer";
 import styles from "./Homepage.module.css";

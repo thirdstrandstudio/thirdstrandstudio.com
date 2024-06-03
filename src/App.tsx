@@ -12,7 +12,6 @@ import Showcase from "./pages/Showcase";
 import Showcase1 from "./pages/Showcase1";
 import Showcase2 from "./pages/Showcase2";
 import Language from "./pages/Language";
-import CodePage from "./pages/CodePage";
 import { Layout } from "./layouts/DefaultLayout";
 
 function App() {
