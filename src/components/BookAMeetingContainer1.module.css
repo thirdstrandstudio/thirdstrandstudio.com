@@ -57,7 +57,7 @@
   font-size: var(--font-size-base);
   background-color: transparent;
   flex: 1;
-  color: var(--color-gray-500);
+  color: black;
   text-align: left;
 }
 .cfEmailField,

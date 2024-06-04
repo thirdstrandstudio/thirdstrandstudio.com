@@ -1,4 +1,4 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { FunctionComponent, useMemo, useState, type CSSProperties } from "react";
 import styles from "./BookAMeetingContainer1.module.css";
 
 export type BookAMeetingContainer1Type = {
@@ -40,6 +40,11 @@ const BookAMeetingContainer1: FunctionComponent<BookAMeetingContainer1Type> = ({
   cFMessageFieldHeight,
   bySubmittingThisHeight,
 }) => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   const bookAMeetingContainerStyle: CSSProperties = useMemo(() => {
     return {
       padding: meetingTextPadding,
@@ -89,6 +94,30 @@ const BookAMeetingContainer1: FunctionComponent<BookAMeetingContainer1Type> = ({
     };
   }, [bySubmittingThisHeight]);
 
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const formData = new FormData();
+    formData.append("Name_First", firstName);
+    formData.append("Name_Last", lastName);
+    formData.append("Email", email);
+    formData.append("MultiLine", message);
+    formData.append("zf_referrer_name", "");
+    formData.append("zf_redirect_url", "");
+    formData.append("zc_gad", "");
+    fetch("https://forms.zohopublic.eu/digitaldnastudios361/form/ThirdStrandStudioContactForm/formperma/4kSCS__NtzTgkIB92PZEdc_u8VfHSGoT_TUR8zpu6xQ/htmlRecords/submit", {
+      method: "POST",
+      body: formData,
+    })
+    .then(response => response.text())
+    .then(result => {
+      console.log("Success:", result);
+    })
+    .catch(error => {
+      console.error("Error:", error);
+    });
+  };
+
   return (
     <div
       className={[styles.bookAMeetingContainer, className].join(" ")}
@@ -136,21 +165,32 @@ const BookAMeetingContainer1: FunctionComponent<BookAMeetingContainer1Type> = ({
           </div>
         </div>
       )}
-      <div className={styles.contactForm}>
+      <form target="_blank" action='https://forms.zohopublic.eu/digitaldnastudios361/form/ThirdStrandStudioContactForm/formperma/4kSCS__NtzTgkIB92PZEdc_u8VfHSGoT_TUR8zpu6xQ/htmlRecords/submit' name='form' method='POST' acceptCharset='UTF-8' encType='multipart/form-data' id='form' className={styles.contactForm}>
+        <input type="hidden" name="zf_referrer_name" value="" />
+        <input type="hidden" name="zf_redirect_url" value="" />
+        <input type="hidden" name="zc_gad" value="" />
         <b className={styles.cfTitle}>Speak to us about your goals</b>
         <div className={styles.cfNameFields}>
           <div className={styles.firstNameField}>
             <input
+              name="Name_First"
               className={styles.firstNameField1}
               placeholder="First Name*"
               type="text"
+              value={firstName}
+              required
+              onChange={(e) => setFirstName(e.target.value)}
             />
           </div>
           <div className={styles.firstNameField}>
             <input
               className={styles.firstNameField1}
+              name="Name_Last"
               placeholder="Last Name*"
               type="text"
+              value={lastName}
+              required
+              onChange={(e) => setLastName(e.target.value)}
             />
           </div>
         </div>
@@ -158,17 +198,25 @@ const BookAMeetingContainer1: FunctionComponent<BookAMeetingContainer1Type> = ({
           <input
             className={styles.firstNameField1}
             placeholder="Business Email*"
-            type="text"
+            name="Email"
+            type="email"
+            value={email}
+            required
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className={styles.cfMessageField} style={cFMessageFieldStyle}>
           <input
             className={styles.firstNameField1}
             placeholder="Message..."
+            name="MultiLine"
             type="text"
+            required
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
           />
         </div>
-        <button className={styles.submitButtonsubmitButtonDe}>
+        <button className={styles.submitButtonsubmitButtonDe} type="submit">
           <b className={styles.submitButtonText}>Submit</b>
         </button>
         <div className={styles.cfFormContainer} style={cFFormContainerStyle}>
@@ -176,7 +224,7 @@ const BookAMeetingContainer1: FunctionComponent<BookAMeetingContainer1Type> = ({
           <span className={styles.privacyPolicy}>Privacy Policy</span>
           <span>.</span>
         </div>
-      </div>
+      </form>
     </div>
   );
 };

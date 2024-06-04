@@ -53,27 +53,31 @@ const Nav: FunctionComponent<NavType> = ({ className = "", onClose }) => {
 
   return (
     <div className={[styles.nav, className].join(" ")} data-animate-on-scroll>
-      <div className={styles.frameParent}>
-        <div className={styles.rectangleParent}>
-          <div className={styles.frameChild} />
-          <div className={styles.frameItem} />
-          <div className={styles.frameInner} />
-          <div className={styles.rectangleDiv} />
-          <div className={styles.frameChild1} />
-          <div className={styles.frameChild2} />
-          <div className={styles.frameChild3} />
-          <div className={styles.frameChild4} />
-          <div className={styles.frameChild5} />
-          <div className={styles.frameChild6} />
-          <div className={styles.frameChild7} />
+      <a href="/">
+        <div className={styles.frameParent}>
+          <div className={styles.rectangleParent}>
+            <div className={styles.frameChild} />
+            <div className={styles.frameItem} />
+            <div className={styles.frameInner} />
+            <div className={styles.rectangleDiv} />
+            <div className={styles.frameChild1} />
+            <div className={styles.frameChild2} />
+            <div className={styles.frameChild3} />
+            <div className={styles.frameChild4} />
+            <div className={styles.frameChild5} />
+            <div className={styles.frameChild6} />
+            <div className={styles.frameChild7} />
+          </div>
+          <img
+            className={styles.thirdStrandStudios}
+            alt=""
+            src="/third-strand-studios1.svg"
+          />
         </div>
-        <img
-          className={styles.thirdStrandStudios}
-          alt=""
-          src="/third-strand-studios1.svg"
-        />
+      </a>
+      <div className={styles.contactUs} onClick={onHomeClick}>
+        Home
       </div>
-      <div className={styles.contactUs} onClick={onHomeClick}>Home</div>
       <div className={styles.contactUs} onClick={onAboutText1Click}>
         About Us
       </div>
