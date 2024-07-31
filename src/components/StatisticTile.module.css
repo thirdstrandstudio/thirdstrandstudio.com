@@ -1,0 +1,51 @@
+.b {
+  position: relative;
+  line-height: 56px;
+}
+.margin {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-5xs);
+}
+.programmingLanguages {
+  position: relative;
+  line-height: 24px;
+  font-weight: 300;
+}
+.container,
+.smallTile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--devicoio-royal-blue);
+}
+.smallTile {
+  flex: 1;
+  border-radius: var(--br-xs);
+  background-color: var(--color-gray-300);
+  height: 168px;
+  justify-content: center;
+  padding: var(--padding-21xl) var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 510px;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--devicoio-black);
+  font-family: var(--font-readex-pro);
+}
+@media screen and (max-width: 960px) {
+  .b {
+    font-size: var(--font-size-5xl);
+  }
+}
+@media screen and (max-width: 570px) {
+  .smallTile {
+    flex: unset;
+    align-self: stretch;
+  }
+}

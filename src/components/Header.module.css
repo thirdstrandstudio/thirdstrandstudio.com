@@ -1,0 +1,161 @@
+.frameChild,
+.frameChild1,
+.frameChild2,
+.frameInner,
+.frameItem,
+.rectangleDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--devicoio-black);
+  width: 7.1px;
+  height: 7.1px;
+}
+.frameChild1,
+.frameChild2,
+.frameInner,
+.frameItem,
+.rectangleDiv {
+  left: 28.2px;
+}
+.frameChild1,
+.frameChild2,
+.frameInner,
+.rectangleDiv {
+  top: 21.2px;
+}
+.frameChild1,
+.frameChild2,
+.rectangleDiv {
+  top: 0;
+  left: 35.3px;
+  background-color: var(--color-fuchsia);
+}
+.frameChild1,
+.frameChild2 {
+  top: 14.1px;
+  background-color: var(--devicoio-black);
+}
+.frameChild2 {
+  top: 21.2px;
+  left: 7.1px;
+  background-color: var(--devicoio-royal-blue);
+}
+.frameChild3,
+.frameChild4,
+.frameChild5,
+.frameChild6,
+.frameChild7 {
+  position: absolute;
+  top: 14.1px;
+  left: 7.1px;
+  background-color: var(--devicoio-black);
+  width: 7.1px;
+  height: 7.1px;
+}
+.frameChild4,
+.frameChild5,
+.frameChild6,
+.frameChild7 {
+  top: 7.1px;
+}
+.frameChild5,
+.frameChild6,
+.frameChild7 {
+  top: 21.2px;
+  left: 21.2px;
+  background-color: var(--color-fuchsia);
+}
+.frameChild6,
+.frameChild7 {
+  top: 0;
+  left: 14.1px;
+  background-color: var(--devicoio-royal-blue);
+}
+.frameChild7 {
+  top: 7.1px;
+  left: 21.2px;
+  background-color: var(--devicoio-black);
+}
+.rectangleParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42.3px;
+  height: 28.2px;
+}
+.thirdStrandStudios {
+  position: absolute;
+  top: 9px;
+  left: 54.4px;
+  width: 180.8px;
+  height: 12.2px;
+}
+.frameParent {
+  width: 244.7px;
+  position: relative;
+  height: 28.2px;
+}
+.about,
+.contactUs {
+  position: relative;
+  line-height: 160%;
+}
+.contactUs {
+  cursor: pointer;
+}
+.vectorIcon {
+  position: absolute;
+  height: 60%;
+  width: 76.67%;
+  top: 20%;
+  right: 11.67%;
+  bottom: 20%;
+  left: 11.67%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.burgerIcon {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 42px;
+  position: relative;
+  height: 42px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.desktopHeader,
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav {
+  justify-content: flex-start;
+  gap: var(--gap-4xl);
+}
+.desktopHeader {
+  width: 100%;
+  justify-content: space-between;
+  padding: var(--padding-3xs) var(--padding-11xl);
+  box-sizing: border-box;
+  max-width: 1080px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--devicoio-black);
+  font-family: var(--font-readex-pro);
+}
+@media screen and (max-width: 570px) {
+  .about,
+  .contactUs,
+  .thirdStrandStudios {
+    display: none;
+  }
+  .burgerIcon {
+    display: flex;
+  }
+}

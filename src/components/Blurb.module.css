@@ -1,0 +1,62 @@
+.weDeliverExcellence {
+  position: relative;
+  line-height: 22px;
+  font-weight: 600;
+}
+.container1 {
+  align-self: stretch;
+  flex-direction: column;
+}
+.container,
+.container1,
+.margin {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.container {
+  align-self: stretch;
+  flex-direction: row;
+}
+.margin {
+  width: 100%;
+  flex-direction: column;
+  padding: 0 0 var(--padding-base);
+  box-sizing: border-box;
+  max-width: 920px;
+}
+.exploreHowWe {
+  align-self: stretch;
+  position: relative;
+  line-height: 36px;
+}
+.blurb,
+.container2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 920px;
+  font-size: var(--font-size-11xl);
+  color: var(--devicoio-black);
+}
+.blurb {
+  border-radius: var(--br-5xl);
+  background-color: var(--color-gray-300);
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-25xl) var(--padding-xs) var(--padding-45xl);
+  box-sizing: border-box;
+  max-width: 1080px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-fuchsia);
+  font-family: var(--font-readex-pro);
+}
+@media screen and (max-width: 420px) {
+  .exploreHowWe {
+    font-size: var(--font-size-5xl);
+    line-height: 28px;
+  }
+}

@@ -1,0 +1,38 @@
+.checkboxChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 2.59px;
+  background-color: var(--devicoio-royal-blue);
+  width: 24px;
+  height: 24px;
+}
+.checkboxItem {
+  position: absolute;
+  top: 6.5px;
+  left: 3.9px;
+  width: 16.2px;
+  height: 11.7px;
+}
+.checkbox {
+  width: 24px;
+  position: relative;
+  height: 24px;
+}
+.example1Title {
+  flex: 1;
+  position: relative;
+  line-height: 123%;
+}
+.specialityExample1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--devicoio-black);
+  font-family: var(--font-readex-pro);
+}

@@ -1,0 +1,234 @@
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.servicesTitle {
+  align-self: stretch;
+  position: relative;
+  line-height: 123%;
+}
+.typescriptIcon {
+  width: 56px;
+  position: relative;
+  height: 56px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.techTile:hover,
+.ts {
+  box-sizing: border-box;
+}
+.ts {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-4xs);
+}
+.technologies1Title,
+.technologies1Title1 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 123%;
+  font-family: var(--font-poppins);
+  color: var(--devicoio-black);
+  text-align: center;
+}
+.technologies1Title1 {
+  color: var(--devicoio-royal-blue);
+}
+.techTile,
+.technologies1TitleParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.technologies1TitleParent {
+  align-self: stretch;
+  gap: var(--gap-xs);
+}
+.techTile {
+  cursor: pointer;
+  border: 1px solid var(--color-springgreen-400);
+  padding: var(--padding-2xl-8);
+  background-color: var(--color-gray-200);
+  flex: 1;
+  border-radius: var(--br-7xs);
+  gap: var(--gap-21xl-2);
+}
+.techTile:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0.04)
+    ),
+    #141414;
+  border: 1px solid var(--color-springgreen-300);
+}
+.techTile:active {
+  background: linear-gradient(#000, #000), #141414;
+}
+.csharpIcon {
+  width: 60.3px;
+  position: relative;
+  height: 67.3px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.c {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-7xs);
+  box-sizing: border-box;
+}
+.c,
+.re,
+.reactIcon {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.reactIcon {
+  width: 65.5px;
+  position: relative;
+  height: 58.6px;
+}
+.re {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-7xs) 0;
+  box-sizing: border-box;
+}
+.techTileParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-mid);
+}
+.ja,
+.javascriptIcon {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.javascriptIcon {
+  width: 67.3px;
+  position: relative;
+  height: 67.3px;
+}
+.ja {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.javaIcon,
+.nodejsIcon {
+  width: 60.3px;
+  position: relative;
+  height: 67.3px;
+}
+.javaIcon {
+  width: 66px;
+  height: 67px;
+}
+.aws,
+.awsIcon,
+.javaIcon {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.awsIcon {
+  width: 74.3px;
+  position: relative;
+  height: 44.6px;
+}
+.aws {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) 0;
+  box-sizing: border-box;
+}
+.sqlIcon {
+  width: 66.4px;
+  position: relative;
+  height: 70.8px;
+}
+.sqlIcon,
+.uni,
+.unityIcon {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.unityIcon {
+  width: 66.4px;
+  position: relative;
+  height: 63.8px;
+}
+.uni {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-12xs) 0;
+  box-sizing: border-box;
+}
+.frameParent,
+.section {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-mid);
+  opacity: 0;
+}
+.frameParent.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-bottom;
+}
+.section {
+  width: 1080px;
+  display: none;
+  align-items: center;
+  gap: var(--gap-5xl);
+  max-width: 1080px;
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--devicoio-black);
+  font-family: var(--font-readex-pro);
+}
+@media screen and (max-width: 420px) {
+  .technologies1TitleParent {
+    display: none;
+  }
+}

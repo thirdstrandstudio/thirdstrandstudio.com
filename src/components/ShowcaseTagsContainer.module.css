@@ -1,0 +1,13 @@
+.tags {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--devicoio-royal-blue);
+  font-family: var(--font-readex-pro);
+}

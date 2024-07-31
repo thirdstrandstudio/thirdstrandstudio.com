@@ -6,13 +6,11 @@ import {
   useLocation,
 } from "react-router-dom";
 import Homepage from "./pages/Homepage";
-import AboutUs from "./pages/AboutUs";
-import Contact from "./pages/Contact";
 import Showcase from "./pages/Showcase";
-import Showcase1 from "./pages/Showcase1";
-import Showcase2 from "./pages/Showcase2";
-import Language from "./pages/Language";
-import { Layout } from "./layouts/DefaultLayout";
+import Contact from "./pages/Contact";
+import CodePage from "./pages/CodePage";
+import AboutUs from "./pages/AboutUs";
+import Software from "./pages/Software";
 
 function App() {
   const action = useNavigationType();
@@ -34,7 +32,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/about-us":
+      case "/":
         title = "";
         metaDescription = "";
         break;
@@ -42,23 +40,15 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/showcase-01":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/showcase-02":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/showcase-03":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/language-01":
-        title = "";
-        metaDescription = "";
-        break;
       case "/codepage":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/about-us":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/software":
         title = "";
         metaDescription = "";
         break;
@@ -79,19 +69,14 @@ function App() {
   }, [pathname]);
 
   return (
-    <Layout>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/contact" element={<Contact />} />
-        
-        <Route path="/showcase-01" element={<Showcase />} />
-        <Route path="/showcase-02" element={<Showcase1 />} />
-        <Route path="/showcase-03" element={<Showcase2 />} />
-
-        <Route path="/language-01" element={<Language />} />
-      </Routes>
-    </Layout>
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/showcase" element={<Showcase />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/codepage" element={<CodePage />} />
+      <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/software" element={<Software />} />
+    </Routes>
   );
 }
 export default App;
