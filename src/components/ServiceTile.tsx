@@ -18,7 +18,6 @@ const ServiceTile: FunctionComponent<ServiceTileType> = ({
   dividerColor,
   href,
 }) => {
-  const navigate = useNavigate();
   const dividerStyle: CSSProperties = useMemo(() => {
     return {
       backgroundColor: dividerColor,
@@ -27,7 +26,7 @@ const ServiceTile: FunctionComponent<ServiceTileType> = ({
 
   const onLearnMoreClick = () => {
     if (href) {
-      navigate(href);
+      window.location.href = href;
     }
   };
 

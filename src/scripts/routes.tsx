@@ -3,7 +3,6 @@ import { RouteRecord } from 'vite-react-ssg';
 import Homepage from '../pages/Homepage';
 import Contact from '../pages/Contact';
 import AboutUs from '../pages/AboutUs';
-import Software from '../pages/services/[service]';
 
 const routes: RouteRecord[] = [
   {

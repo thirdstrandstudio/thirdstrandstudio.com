@@ -23,7 +23,7 @@ type ShowcaseProps = {
   headerImage: string;
 };
 
-const Showcase: FunctionComponent<{ caseStudy: string }> = ({ caseStudy }) => {
+const Showcase: FunctionComponent = () => {
   const { title, description, headerImage, blurb, tags, sections } =
     useLoaderData() as ShowcaseProps;
   return (

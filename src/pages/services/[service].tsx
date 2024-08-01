@@ -43,7 +43,7 @@ type ServiceProps = {
   clientSuccessSection: ServiceInfoTextDescriptionImage;
 };
 
-const Service: FunctionComponent<{ service: string }> = ({ service }) => {
+const Service: FunctionComponent = () => {
   const navigate = useNavigate();
   const {
     title,
@@ -299,6 +299,7 @@ const Service: FunctionComponent<{ service: string }> = ({ service }) => {
   );
 };
 
+export default Service;
 export const component = Service;
 export const Component = component;
 

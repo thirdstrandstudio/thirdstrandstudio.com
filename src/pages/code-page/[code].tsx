@@ -41,7 +41,7 @@ type CodePageProps = {
   sections: QuestionAnswerSection[];
 };
 
-const CodePage: FunctionComponent<{ code: string }> = () => {
+const CodePage: FunctionComponent = () => {
   const { mainContent, articleSections, sections } =
     useLoaderData() as CodePageProps;
 
@@ -138,8 +138,7 @@ const CodePage: FunctionComponent<{ code: string }> = () => {
   );
 };
 
-export const component = CodePage;
-export const Component = component;
+export const Component = CodePage;
 
 export const entry = "src/pages/code-page/[code].tsx";
 
