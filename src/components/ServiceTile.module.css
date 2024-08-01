@@ -31,6 +31,7 @@
 .learnMore1 {
   position: relative;
   line-height: 123%;
+  cursor: pointer;
 }
 .learnMore {
   align-self: stretch;

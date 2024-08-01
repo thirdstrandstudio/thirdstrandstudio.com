@@ -72,6 +72,15 @@
   gap: var(--gap-lgi);
   max-width: 1080px;
 }
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
 .atThirdStrand {
   margin: 0;
 }
@@ -114,10 +123,14 @@
   display: inline-block;
   max-width: 1080px;
 }
+.heroStrapline4 {
+  font-size: var(--font-size-17xl);
+}
 .heroStrapline5 {
   font-size: var(--font-size-lg);
   line-height: 160%;
   text-align: left;
+  white-space: preserve;
 }
 .showcaseContent02 {
   align-self: stretch;

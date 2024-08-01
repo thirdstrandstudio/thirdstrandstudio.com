@@ -134,7 +134,7 @@
   font-size: var(--font-size-xs);
   line-height: 123%;
   display: inline-block;
-  height: 26px;
+  height: 40px;
   flex-shrink: 0;
 }
 .bookAMeetingContainer,

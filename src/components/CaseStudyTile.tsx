@@ -56,7 +56,7 @@ const CaseStudyTile: FunctionComponent<CaseStudyTileType> = ({
     >
       <div className={styles.showcase01}>
         <div className={styles.info}>
-          <ShowcaseTagsContainer heroStrapline1="C+" />
+          <ShowcaseTagsContainer />
           <b className={styles.title}>{title}</b>
           <div className={styles.description}>{description}</div>
           <div className={styles.learnMore}>

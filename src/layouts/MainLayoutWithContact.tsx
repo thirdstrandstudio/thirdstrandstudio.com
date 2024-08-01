@@ -6,11 +6,15 @@ import Footer from "../components/Footer";
 const MainLayoutWithContact: React.FunctionComponent<{
   children: React.ReactNode;
   strapLineData: StrapLineData;
-}> = ({ children, strapLineData }) => {
+  headerChildren?: React.ReactNode;
+  headerImage?: string;
+}> = ({ children, strapLineData, headerChildren, headerImage }) => {
   const navigate = useNavigate();
   
   return (
     <MainLayout
+      headerChildren={headerChildren}
+      headerImage={headerImage}
       strapLineData={{
         ...strapLineData,
         button: {
@@ -22,7 +26,6 @@ const MainLayoutWithContact: React.FunctionComponent<{
       }}
     >
       {children}
-      <Footer/>
     </MainLayout>
   );
 };

@@ -162,7 +162,7 @@
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 1550px;
+  max-width: 1080px;
 }
 .heading2margin,
 .section,
@@ -685,7 +685,7 @@
   width: 100%;
   align-items: center;
   gap: var(--gap-29xl);
-  max-width: 1550px;
+  max-width: 1450px;
   text-align: center;
   font-size: var(--font-size-17xl);
 }

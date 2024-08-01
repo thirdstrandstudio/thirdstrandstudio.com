@@ -4,23 +4,25 @@ import styles from "./MainLayout.module.css";
 import ButtonComponent, {
   ButtonComponentProps,
 } from "../components/ButtonComponent";
+import Footer from "../components/Footer";
 
 export interface StrapLineData {
   title: string;
-  description: string;
+  description?: string;
   descriptionClassName?: string;
-  headerImage?: string;
   button?: ButtonComponentProps;
 }
 
 interface MainLayoutProps {
   children: ReactNode;
+  headerChildren?: ReactNode;
+  headerImage?: string;
   strapLineData?: StrapLineData;
 }
 
-const MainLayout: React.FC<MainLayoutProps> = ({ children, strapLineData }) => {
-  const backgroundImageStyling = strapLineData?.headerImage
-    ? { backgroundImage: `url(${strapLineData.headerImage})` }
+const MainLayout: React.FC<MainLayoutProps> = ({ children, strapLineData, headerChildren, headerImage }) => {
+  const backgroundImageStyling = headerImage
+    ? { backgroundImage: `url(${headerImage})` }
     : {};
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
@@ -55,11 +57,17 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children, strapLineData }) => {
     <div className={styles.mainContainer}>
       <div style={backgroundImageStyling} className={styles.headerContainer}>
         <Header />
+        {headerChildren}
         {strapLineData && (
           <div className={styles.heroStrapline} data-animate-on-scroll>
             <div className={styles.gradientDivider} />
             <div className={styles.heroStrapline1}>{strapLineData.title}</div>
-            <div className={[styles.heroDescription, strapLineData?.descriptionClassName ?? ""].join(" ")}>
+            <div
+              className={[
+                styles.heroDescription,
+                strapLineData?.descriptionClassName ?? "",
+              ].join(" ")}
+            >
               {strapLineData.description}
             </div>
             {strapLineData.button && (
@@ -69,6 +77,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children, strapLineData }) => {
         )}
       </div>
       {children}
+      <Footer />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { CSSProperties, FunctionComponent } from "react";
 import styles from "./ArticleFullRow.module.css";
 
 export type ArticleFullRowType = {
@@ -6,6 +6,7 @@ export type ArticleFullRowType = {
   desc?: string;
   title?: string;
   image?: string;
+  reverse?: boolean;
 };
 
 const ArticleFullRow: FunctionComponent<ArticleFullRowType> = ({
@@ -13,9 +14,11 @@ const ArticleFullRow: FunctionComponent<ArticleFullRowType> = ({
   desc,
   title,
   image,
+  reverse = false
 }) => {
+  const reverseStyle: CSSProperties = reverse ? {"flexDirection": "row-reverse"} : {};
   return (
-    <div className={[styles.articleLeft, className].join(" ")}>
+    <div style={reverseStyle} className={[styles.articleLeft, className].join(" ")}>
       <div className={styles.container}>
         <div className={styles.heading3}>
           <b className={styles.about}>{title}</b>

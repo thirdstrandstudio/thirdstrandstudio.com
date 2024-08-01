@@ -464,7 +464,7 @@
 .softwareDevelopmentContainer,
 .specialityExample1Group {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -475,6 +475,7 @@
 .specialityExample1Group {
   flex: 1;
   gap: var(--gap-base);
+  flex-wrap: wrap;
 }
 .divider3,
 .servicesParent {

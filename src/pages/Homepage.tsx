@@ -32,15 +32,18 @@ const Homepage: FunctionComponent = () => {
           <div className={styles.services}>
             <ServiceTile
               title="Software development"
+              href="/services/software"
               description="We specialise in developing fine tuned efficient software for multiple We specialise in developing fine tuned efficient software for multiple We specialise in developing fine tuned efficient software for multiple "
             />
             <ServiceTile
               title="Design"
+              href="/services/design"
               description="We specialise in developing fine tuned efficient software for multiple We specialise in developing fine tuned efficient software for multiple We specialise in developing fine tuned efficient software for multiple "
               dividerColor="#b281a5"
             />
             <ServiceTile
               title="Web3"
+              href="/services/web3"
               description="We specialise in developing fine tuned efficient software for multiple We specialise in developing fine tuned efficient software for multiple We specialise in developing fine tuned efficient software for multiple "
               dividerColor="#ff00d6"
             />
