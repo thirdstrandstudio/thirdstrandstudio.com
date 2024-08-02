@@ -7,7 +7,7 @@ export type NavType = {
   onClose?: () => void;
 };
 
-const Nav: FunctionComponent<NavType> = ({ className = "", onClose }) => {
+const Nav: FunctionComponent<NavType> = ({ className = "" }) => {
   const navigate = useNavigate();
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
@@ -39,13 +39,9 @@ const Nav: FunctionComponent<NavType> = ({ className = "", onClose }) => {
     };
   }, []);
 
-  const onAboutText1Click = useCallback(() => {
-    navigate("/about-us");
-  }, [navigate]);
-
-  const onHomeClick = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
+  const onAboutTextClick = useCallback(() => {
+    // Please sync "about_us" to the project
+  }, []);
 
   const onContactUsTextClick = useCallback(() => {
     navigate("/contact");
@@ -53,32 +49,28 @@ const Nav: FunctionComponent<NavType> = ({ className = "", onClose }) => {
 
   return (
     <div className={[styles.nav, className].join(" ")} data-animate-on-scroll>
-      <a href="/">
-        <div className={styles.frameParent}>
-          <div className={styles.rectangleParent}>
-            <div className={styles.frameChild} />
-            <div className={styles.frameItem} />
-            <div className={styles.frameInner} />
-            <div className={styles.rectangleDiv} />
-            <div className={styles.frameChild1} />
-            <div className={styles.frameChild2} />
-            <div className={styles.frameChild3} />
-            <div className={styles.frameChild4} />
-            <div className={styles.frameChild5} />
-            <div className={styles.frameChild6} />
-            <div className={styles.frameChild7} />
-          </div>
-          <img
-            className={styles.thirdStrandStudios}
-            alt=""
-            src="/third-strand-studios1.svg"
-          />
+      <div className={styles.frameParent}>
+        <div className={styles.rectangleParent}>
+          <div className={styles.frameChild} />
+          <div className={styles.frameItem} />
+          <div className={styles.frameInner} />
+          <div className={styles.rectangleDiv} />
+          <div className={styles.frameChild1} />
+          <div className={styles.frameChild2} />
+          <div className={styles.frameChild3} />
+          <div className={styles.frameChild4} />
+          <div className={styles.frameChild5} />
+          <div className={styles.frameChild6} />
+          <div className={styles.frameChild7} />
         </div>
-      </a>
-      <div className={styles.contactUs} onClick={onHomeClick}>
-        Home
+        <img
+          className={styles.thirdStrandStudios}
+          alt=""
+          src="/third-strand-studios1.svg"
+        />
       </div>
-      <div className={styles.contactUs} onClick={onAboutText1Click}>
+      <div className={styles.about}>Home</div>
+      <div className={styles.contactUs} onClick={onAboutTextClick}>
         About Us
       </div>
       <div className={styles.contactUs} onClick={onContactUsTextClick}>

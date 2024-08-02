@@ -1,0 +1,204 @@
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.gradientDivider {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(89.95deg, #65ff74, #ff00d6);
+  height: 5px;
+  overflow: hidden;
+  flex-shrink: 0;
+  max-width: 150px;
+}
+.heroStrapline1 {
+  width: 100%;
+  position: relative;
+  line-height: 123%;
+  font-weight: 600;
+  display: inline-block;
+  max-width: 700px;
+}
+.heroStrapline,
+.heroStraplineContainer {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.heroStrapline {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--gap-17xl);
+  opacity: 0;
+}
+.heroStrapline.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-bottom;
+}
+.heroStraplineContainer {
+  width: 100%;
+  padding: var(--padding-11xl);
+  box-sizing: border-box;
+  max-width: 1080px;
+}
+.heroStraplineContainer,
+.tags,
+.topSection {
+  display: flex;
+  justify-content: flex-start;
+}
+.topSection {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-21xl) 0 var(--padding-41xl);
+  gap: var(--gap-3xs);
+  background-image: url(/public/top-section@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-size: var(--font-size-41xl);
+}
+.tags {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--gap-lgi);
+  max-width: 1080px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.atThirdStrand {
+  margin: 0;
+}
+.heroStrapline2,
+.showcaseOverview {
+  width: 100%;
+  position: relative;
+  line-height: 160%;
+  display: inline-block;
+  max-width: 1080px;
+}
+.heroStrapline2 {
+  font-size: var(--font-size-17xl);
+  line-height: 123%;
+  text-align: center;
+}
+.showcaseContent01 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xs);
+  gap: var(--gap-21xl);
+  font-size: var(--font-size-lg);
+}
+.showcaseImage02Icon {
+  width: 100%;
+  max-width: 1080px;
+  overflow: hidden;
+  height: 350px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.heroStrapline4,
+.heroStrapline5 {
+  width: 100%;
+  position: relative;
+  line-height: 123%;
+  display: inline-block;
+  max-width: 1080px;
+}
+.heroStrapline4 {
+  font-size: var(--font-size-17xl);
+}
+.heroStrapline5 {
+  font-size: var(--font-size-lg);
+  line-height: 160%;
+  text-align: left;
+  white-space: preserve;
+}
+.showcaseContent02 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xs);
+  gap: var(--gap-21xl);
+  text-align: center;
+}
+.mortgageCalculatorEmpower {
+  margin-bottom: 0;
+}
+.mortgageCalculatorEmpowerC {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-5xl);
+}
+.heroStrapline9 {
+  width: 100%;
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 200%;
+  text-align: left;
+  display: inline-block;
+  max-width: 1080px;
+}
+.showcaseImage03Icon {
+  width: 100%;
+  max-width: 1080px;
+  overflow: hidden;
+  height: 550px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.bottomSection,
+.showcase01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.bottomSection {
+  align-self: stretch;
+  padding: 0 var(--padding-xs);
+  gap: 45px;
+  font-size: var(--font-size-xl);
+}
+.showcase01 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-100);
+  gap: var(--gap-41xl);
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--devicoio-black);
+  font-family: var(--font-readex-pro);
+}
+@media screen and (max-width: 960px) {
+  .heroStrapline1 {
+    font-size: var(--font-size-35xl);
+  }
+}
+@media screen and (max-width: 570px) {
+  .heroStrapline1 {
+    font-size: var(--font-size-23xl);
+    line-height: 56px;
+  }
+}

@@ -1,9 +1,0 @@
-.headerContainer {
-  align-self: stretch;
-  background-color: var(--color-black);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: var(--padding-21xl) 0 var(--padding-41xl);
-}

@@ -1,0 +1,598 @@
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.gradientDivider {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(89.95deg, #65ff74, #ff00d6);
+  height: 5px;
+  overflow: hidden;
+  flex-shrink: 0;
+  max-width: 150px;
+}
+.heroStrapline1 {
+  flex: 1;
+  position: relative;
+  line-height: 123%;
+}
+.heroStrapline,
+.heroStraplineWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.heroStrapline {
+  flex-direction: column;
+  gap: var(--gap-17xl);
+  opacity: 0;
+}
+.heroStrapline.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-bottom;
+}
+.specialityBody {
+  align-self: stretch;
+  position: relative;
+  line-height: 160%;
+}
+.specialityExamplesRow1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.meetingTextTitle {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-11xl);
+  line-height: 123%;
+  font-weight: 600;
+}
+.meetingText1Icon {
+  width: 46px;
+  position: relative;
+  height: 46px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.meetingText11 {
+  flex: 1;
+  position: relative;
+  line-height: 123%;
+}
+.meetingText1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xl);
+}
+.meetingText2Icon {
+  width: 46px;
+  position: relative;
+  height: 41.7px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.meetingText {
+  width: 504px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-base);
+  box-sizing: border-box;
+  gap: var(--gap-38xl);
+}
+.cfTitle,
+.firstNameField1 {
+  position: relative;
+  line-height: 123%;
+}
+.cfTitle {
+  align-self: stretch;
+}
+.firstNameField1 {
+  border: 0;
+  outline: 0;
+  font-family: var(--font-readex-pro);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  flex: 1;
+  color: var(--color-gray-500);
+  text-align: left;
+}
+.cfEmailField,
+.cfMessageField,
+.cfNameFields,
+.firstNameField {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.firstNameField {
+  flex: 1;
+  border-radius: var(--br-7xs);
+  background-color: var(--devicoio-black);
+  border: 1px solid var(--color-gray-600);
+  padding: var(--padding-mini) var(--padding-xl);
+}
+.cfEmailField,
+.cfMessageField,
+.cfNameFields {
+  align-self: stretch;
+}
+.cfNameFields {
+  gap: var(--gap-xl);
+}
+.cfEmailField,
+.cfMessageField {
+  border-radius: var(--br-7xs);
+  background-color: var(--devicoio-black);
+  border: 1px solid var(--color-gray-600);
+  padding: var(--padding-mini) var(--padding-xl);
+}
+.cfMessageField {
+  box-sizing: border-box;
+  height: 180px;
+}
+.submitButtonText {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 123%;
+  font-family: var(--font-readex-pro);
+  color: var(--color-black);
+  text-align: left;
+}
+.submitButtonsubmitButtonDe {
+  cursor: pointer;
+  border: 1px solid var(--color-gray-600);
+  padding: var(--padding-mini) var(--padding-xl);
+  background-color: var(--color-springgreen-100);
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.submitButtonsubmitButtonDe:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    #69f977;
+}
+.submitButtonsubmitButtonDe:active {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #69f977;
+}
+.privacyPolicy {
+  font-weight: 600;
+}
+.cfFormContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-xs);
+  line-height: 123%;
+  display: inline-block;
+  height: 26px;
+  flex-shrink: 0;
+}
+.contactForm {
+  flex: 1;
+  border-radius: var(--br-xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-xl);
+}
+.bookAMeetingContainer {
+  flex: 1;
+  border-radius: var(--br-7xs);
+  border: 1px solid var(--color-springgreen-400);
+  box-sizing: border-box;
+  display: flex;
+  padding: var(--padding-29xl) var(--padding-5xl) 0;
+  gap: var(--gap-5xl);
+  max-width: 1080px;
+}
+.bookAMeetingContainer,
+.bookAMeetingContainerWrapper,
+.specialityExamplesRow1Parent {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.bookAMeetingContainerWrapper {
+  width: 498px;
+  display: none;
+  font-size: var(--font-size-sm);
+}
+.specialityExamplesRow1Parent {
+  align-self: stretch;
+  display: flex;
+  gap: var(--gap-41xl);
+  font-size: var(--font-size-lg);
+}
+.text {
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 120%;
+  font-weight: 500;
+  font-family: var(--font-readex-pro);
+  color: var(--color-black);
+  text-align: center;
+}
+.contactUsButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xl) var(--padding-xl);
+  background-color: var(--devicoio-royal-blue);
+  width: 100%;
+  border-radius: var(--br-7xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 300px;
+}
+.contactUsButton:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    linear-gradient(89.95deg, #65ff74, #ff00d6);
+}
+.contactUsButton:active {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(89.95deg, #65ff74, #ff00d6);
+}
+.heroStraplineContainer,
+.topSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-41xl);
+}
+.heroStraplineContainer {
+  width: 100%;
+  align-items: flex-start;
+  padding: var(--padding-11xl) var(--padding-xs);
+  box-sizing: border-box;
+  max-width: 1080px;
+}
+.topSection {
+  align-self: stretch;
+  align-items: center;
+  padding: var(--padding-21xl) var(--padding-xs) var(--padding-41xl);
+  background-image: url(/public/top-section1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.divider {
+  align-self: stretch;
+  position: relative;
+  background: linear-gradient(89.95deg, #65ff74, #ff00d6);
+  height: 5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.workspace01 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.description,
+.title {
+  align-self: stretch;
+  position: relative;
+  line-height: 160%;
+}
+.title {
+  font-weight: 600;
+}
+.description {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-400);
+}
+.titleDescription {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.atThirdStrand {
+  margin: 0;
+}
+.workspaceContainer,
+.workspaces {
+  display: flex;
+  align-items: flex-start;
+}
+.workspaces {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+  box-sizing: border-box;
+  gap: var(--gap-41xl);
+  max-width: 1080px;
+}
+.workspaceContainer {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  font-size: var(--font-size-xl);
+}
+.divider1,
+.gloalWorkspace {
+  width: 100%;
+  max-width: 1080px;
+}
+.gloalWorkspace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-27xl);
+  text-align: center;
+}
+.divider1 {
+  position: relative;
+  background-color: var(--devicoio-royal-blue);
+  height: 5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.services {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.description3 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 123%;
+}
+.specialityExample1Parent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-base);
+}
+.frameParent,
+.specialityExample1Parent,
+.specialityExamplesRow11 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.specialityExamplesRow11 {
+  flex: 1;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-gray-200);
+  flex-direction: column;
+  padding: var(--padding-5xl);
+  gap: var(--gap-17xl);
+  font-size: var(--font-size-xl);
+}
+.servicesContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xs);
+  box-sizing: border-box;
+  gap: var(--gap-27xl);
+  max-width: 1080px;
+}
+.divider2 {
+  width: 100%;
+  position: relative;
+  background-color: #b47da7;
+  height: 5px;
+  overflow: hidden;
+  flex-shrink: 0;
+  max-width: 1080px;
+}
+.servicesTitle1 {
+  align-self: stretch;
+  position: relative;
+  line-height: 123%;
+  font-weight: 600;
+}
+.specialityTimelinesLeft {
+  align-self: stretch;
+  font-size: var(--font-size-lg);
+}
+.learnMore1,
+.specialityTimelinesLeft {
+  position: relative;
+  line-height: 123%;
+}
+.learnMore,
+.softwareDevelopment {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.learnMore {
+  width: 314.7px;
+  display: none;
+  align-items: center;
+  padding: var(--padding-3xs) 0;
+  box-sizing: border-box;
+}
+.softwareDevelopment {
+  width: 485px;
+  height: 36px;
+  display: flex;
+  align-items: flex-start;
+}
+.softwareDevelopmentContainer,
+.specialityExample1Group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.softwareDevelopmentContainer {
+  padding: var(--padding-base);
+  font-size: var(--font-size-base);
+}
+.specialityExample1Group {
+  flex: 1;
+  gap: var(--gap-base);
+  flex-wrap: wrap;
+}
+.divider3,
+.servicesParent {
+  width: 100%;
+  max-width: 1080px;
+}
+.servicesParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-xs);
+  box-sizing: border-box;
+  gap: var(--gap-27xl);
+  font-size: var(--font-size-11xl);
+}
+.divider3 {
+  position: relative;
+  background-color: var(--color-fuchsia);
+  height: 5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.codePage,
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-41xl);
+}
+
+.outerSection {
+  gap: 2rem;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-self: center;
+}
+
+.content {
+  align-self: stretch;
+  padding: 0 var(--padding-xs);
+  padding-top: 2rem;
+  font-size: var(--font-size-17xl);
+}
+.codePage {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-100);
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--devicoio-black);
+  font-family: var(--font-readex-pro);
+}
+@media screen and (max-width: 960px) {
+  .heroStrapline1 {
+    font-size: var(--font-size-35xl);
+  }
+  .contactForm,
+  .specialityExamplesRow1 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .bookAMeetingContainer {
+    flex-direction: column;
+    gap: var(--gap-41xl);
+  }
+  .specialityExamplesRow1Parent {
+    flex-direction: column;
+  }
+  .services,
+  .specialityExamplesRow11 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .servicesContainer,
+  .servicesParent {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 570px) {
+  .heroStrapline1 {
+    font-size: var(--font-size-23xl);
+    line-height: 56px;
+  }
+  .meetingText {
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
+    box-sizing: border-box;
+  }
+  .firstNameField {
+    flex: unset;
+    align-self: stretch;
+  }
+  .cfNameFields {
+    flex-direction: column;
+  }
+  .contactForm {
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
+    box-sizing: border-box;
+  }
+  .bookAMeetingContainer {
+    padding-left: var(--padding-3xs);
+    padding-top: var(--padding-21xl);
+    padding-right: var(--padding-3xs);
+    box-sizing: border-box;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .specialityExample1Parent {
+    flex: unset;
+    align-self: stretch;
+  }
+  .frameParent {
+    flex-direction: column;
+  }
+}

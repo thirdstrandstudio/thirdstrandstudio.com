@@ -1,0 +1,203 @@
+.meetingTextTitle {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-11xl);
+  line-height: 123%;
+  font-weight: 600;
+}
+.meetingText1Icon {
+  width: 46px;
+  position: relative;
+  height: 46px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.meetingText11 {
+  flex: 1;
+  position: relative;
+  line-height: 123%;
+}
+.meetingText1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xl);
+}
+.meetingText2Icon {
+  width: 46px;
+  position: relative;
+  height: 41.7px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.meetingText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-base);
+  gap: var(--gap-38xl);
+}
+.cfTitle,
+.firstNameField1 {
+  position: relative;
+  line-height: 123%;
+}
+.cfTitle {
+  align-self: stretch;
+}
+.firstNameField1 {
+  border: 0;
+  outline: 0;
+  font-family: var(--font-readex-pro);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  flex: 1;
+  color: var(--color-gray-500);
+  text-align: left;
+}
+.cfEmailField,
+.cfMessageField,
+.cfNameFields,
+.firstNameField {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.firstNameField {
+  flex: 1;
+  border-radius: var(--br-7xs);
+  background-color: var(--devicoio-black);
+  border: 1px solid var(--color-gray-600);
+  padding: var(--padding-mini) var(--padding-xl);
+}
+.cfEmailField,
+.cfMessageField,
+.cfNameFields {
+  align-self: stretch;
+}
+.cfNameFields {
+  gap: var(--gap-xl);
+}
+.cfEmailField,
+.cfMessageField {
+  border-radius: var(--br-7xs);
+  background-color: var(--devicoio-black);
+  border: 1px solid var(--color-gray-600);
+  padding: var(--padding-mini) var(--padding-xl);
+}
+.cfMessageField {
+  box-sizing: border-box;
+  height: 180px;
+}
+.submitButtonText {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 123%;
+  font-family: var(--font-readex-pro);
+  color: var(--color-black);
+  text-align: left;
+}
+.submitButtonsubmitButtonDe {
+  cursor: pointer;
+  border: 1px solid var(--color-gray-600);
+  padding: var(--padding-mini) var(--padding-xl);
+  background-color: var(--color-springgreen-100);
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.submitButtonsubmitButtonDe:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    #69f977;
+}
+.submitButtonsubmitButtonDe:active {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #69f977;
+}
+.privacyPolicy {
+  font-weight: 600;
+}
+.cfFormContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-xs);
+  line-height: 123%;
+  display: inline-block;
+  height: 40px;
+  flex-shrink: 0;
+}
+.bookAMeetingContainer,
+.contactForm {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contactForm {
+  flex: 1;
+  border-radius: var(--br-xs);
+  overflow: hidden;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-xl);
+}
+.bookAMeetingContainer {
+  width: 100%;
+  border-radius: var(--br-7xs);
+  border: 1px solid var(--color-springgreen-400);
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: var(--padding-29xl) var(--padding-5xl) 0;
+  gap: var(--gap-5xl);
+  max-width: 1080px;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--devicoio-black);
+  font-family: var(--font-readex-pro);
+}
+@media screen and (max-width: 960px) {
+  .contactForm,
+  .meetingText {
+    flex: unset;
+    align-self: stretch;
+  }
+  .bookAMeetingContainer {
+    flex-direction: column;
+    gap: var(--gap-41xl);
+  }
+}
+@media screen and (max-width: 570px) {
+  .meetingText {
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
+    box-sizing: border-box;
+  }
+  .firstNameField {
+    flex: unset;
+    align-self: stretch;
+  }
+  .cfNameFields {
+    flex-direction: column;
+  }
+  .contactForm {
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
+    box-sizing: border-box;
+  }
+  .bookAMeetingContainer {
+    padding-left: var(--padding-3xs);
+    padding-top: var(--padding-21xl);
+    padding-right: var(--padding-3xs);
+    box-sizing: border-box;
+  }
+}

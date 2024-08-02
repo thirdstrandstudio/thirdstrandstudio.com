@@ -1,0 +1,35 @@
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xl) var(--padding-xl);
+  background-color: var(--devicoio-royal-blue);
+  width: 100%;
+  border-radius: var(--br-7xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 300px;
+}
+.button:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    linear-gradient(89.95deg, #65ff74, #ff00d6);
+}
+.button:active {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(89.95deg, #65ff74, #ff00d6);
+}
+.text {
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 120%;
+  font-weight: 500;
+  font-family: var(--font-readex-pro);
+  color: var(--color-black);
+  text-align: center;
+}

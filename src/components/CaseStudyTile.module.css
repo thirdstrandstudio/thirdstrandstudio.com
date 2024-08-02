@@ -1,0 +1,108 @@
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.title {
+  align-self: stretch;
+  font-size: var(--font-size-17xl);
+  line-height: 123%;
+  color: var(--devicoio-black);
+}
+.description,
+.learnMore1,
+.title {
+  position: relative;
+  font-family: var(--font-readex-pro);
+  text-align: left;
+}
+.description {
+  align-self: stretch;
+  font-size: var(--font-size-sm);
+  line-height: 130%;
+  color: var(--color-gray-400);
+}
+.learnMore1 {
+  font-size: var(--font-size-base);
+  line-height: 123%;
+  color: var(--devicoio-royal-blue);
+}
+.learnMore {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) 0;
+  box-sizing: border-box;
+}
+.imageIcon,
+.info {
+  align-self: stretch;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.imageIcon {
+  max-width: 100%;
+  overflow: hidden;
+  height: 200px;
+  flex-shrink: 0;
+  object-fit: cover;
+  max-height: 200px;
+}
+.showcase01,
+.showcase01Container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.showcase01 {
+  align-self: stretch;
+  gap: var(--gap-base);
+}
+.showcase01Container {
+  cursor: pointer;
+  border: 1px solid var(--color-springgreen-200);
+  padding: var(--padding-21xl);
+  background-color: var(--color-gray-300);
+  flex: 1;
+  border-radius: var(--br-7xs);
+  box-sizing: border-box;
+  opacity: 0;
+  min-height: 530px;
+}
+.showcase01Container.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-bottom;
+}
+.showcase01Container:hover {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    #3b7841;
+}
+.showcase01Container:active {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #3b7841;
+}
+@media screen and (max-width: 570px) {
+  .showcase01 {
+    flex-direction: column;
+  }
+  .showcase01Container {
+    padding: var(--padding-base);
+    box-sizing: border-box;
+    flex: unset;
+    align-self: stretch;
+  }
+}

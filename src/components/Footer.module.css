@@ -1,100 +1,100 @@
 .frameChild,
-.frameItem {
-  top: 0;
-  background-color: var(--color-white);
-}
-.frameChild {
-  position: absolute;
-  left: 0;
-  width: 0.444rem;
-  height: 0.444rem;
-}
-.frameItem {
-  left: 1.763rem;
-}
+.frameChild1,
+.frameChild2,
 .frameInner,
 .frameItem,
 .rectangleDiv {
   position: absolute;
-  width: 0.444rem;
-  height: 0.444rem;
-}
-.frameInner {
-  top: 1.325rem;
-  left: 1.763rem;
-  background-color: var(--color-white);
-}
-.rectangleDiv {
   top: 0;
-  left: 2.206rem;
-  background-color: var(--color-fuchsia);
+  left: 0;
+  background-color: var(--devicoio-black);
+  width: 7.1px;
+  height: 7.1px;
 }
 .frameChild1,
 .frameChild2,
-.frameChild3,
-.frameChild4 {
-  position: absolute;
-  top: 0.881rem;
-  left: 2.206rem;
-  background-color: var(--color-white);
-  width: 0.444rem;
-  height: 0.444rem;
+.frameInner,
+.frameItem,
+.rectangleDiv {
+  left: 28.2px;
 }
+.frameChild1,
 .frameChild2,
-.frameChild3,
-.frameChild4 {
-  top: 1.325rem;
-  left: 0.444rem;
-  background-color: var(--color-springgreen-100);
+.frameInner,
+.rectangleDiv {
+  top: 21.2px;
 }
-.frameChild3,
-.frameChild4 {
-  top: 0.881rem;
-  background-color: var(--color-white);
-}
-.frameChild4 {
-  top: 0.444rem;
-}
-.frameChild5 {
-  top: 1.325rem;
-  left: 1.325rem;
+.frameChild1,
+.frameChild2,
+.rectangleDiv {
+  top: 0;
+  left: 35.3px;
   background-color: var(--color-fuchsia);
 }
+.frameChild1,
+.frameChild2 {
+  top: 14.1px;
+  background-color: var(--devicoio-black);
+}
+.frameChild2 {
+  top: 21.2px;
+  left: 7.1px;
+  background-color: var(--devicoio-royal-blue);
+}
+.frameChild3,
+.frameChild4,
 .frameChild5,
 .frameChild6,
 .frameChild7 {
   position: absolute;
-  width: 0.444rem;
-  height: 0.444rem;
+  top: 14.1px;
+  left: 7.1px;
+  background-color: var(--devicoio-black);
+  width: 7.1px;
+  height: 7.1px;
 }
-.frameChild6 {
+.frameChild4,
+.frameChild5,
+.frameChild6,
+.frameChild7 {
+  top: 7.1px;
+}
+.frameChild5,
+.frameChild6,
+.frameChild7 {
+  top: 21.2px;
+  left: 21.2px;
+  background-color: var(--color-fuchsia);
+}
+.frameChild6,
+.frameChild7 {
   top: 0;
-  left: 0.881rem;
-  background-color: var(--color-springgreen-100);
+  left: 14.1px;
+  background-color: var(--devicoio-royal-blue);
 }
 .frameChild7 {
-  top: 0.444rem;
-  left: 1.325rem;
-  background-color: var(--color-white);
+  top: 7.1px;
+  left: 21.2px;
+  background-color: var(--devicoio-black);
 }
 .rectangleParent {
   position: absolute;
   top: 0;
   left: 0;
-  width: 2.644rem;
-  height: 1.763rem;
+  width: 42.3px;
+  height: 28.2px;
 }
 .thirdStrandStudios {
   position: absolute;
-  top: 0.563rem;
-  left: 3.4rem;
-  width: 11.3rem;
-  height: 0.763rem;
+  top: 9px;
+  left: 54.4px;
+  width: 180.8px;
+  height: 12.2px;
 }
 .frameParent {
-  width: 15.294rem;
+  width: 244.7px;
   position: relative;
-  height: 1.763rem;
+  height: 28.2px;
 }
 .companyColumnHeader {
   font-size: var(--font-size-sm);
@@ -111,12 +111,12 @@
   align-items: center;
 }
 .connect {
-  width: 8.125rem;
+  width: 130px;
   position: relative;
   line-height: 123%;
   font-weight: 500;
   justify-content: center;
-  height: 2.5rem;
+  height: 40px;
   flex-shrink: 0;
 }
 .connectButton {
@@ -133,7 +133,7 @@
   align-items: flex-start;
   justify-content: center;
   gap: var(--gap-4xl);
-  min-width: 8.125rem;
+  min-width: 130px;
 }
 .footerContainer,
 .links {
@@ -152,13 +152,13 @@
   justify-content: space-between;
   padding: var(--padding-3xs) var(--padding-11xl);
   box-sizing: border-box;
-  max-width: 67.5rem;
+  max-width: 1080px;
 }
 .divider {
   align-self: stretch;
   position: relative;
   background-color: var(--color-gray-700);
-  height: 0.188rem;
+  height: 3px;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -173,7 +173,7 @@
   position: relative;
   line-height: 160%;
   display: inline-block;
-  min-width: 5.625rem;
+  min-width: 90px;
 }
 .privacyLegal {
   display: none;
@@ -209,7 +209,7 @@
   align-items: flex-start;
   padding: var(--padding-11xl);
   box-sizing: border-box;
-  max-width: 67.5rem;
+  max-width: 1080px;
 }
 .footer {
   align-self: stretch;
@@ -219,7 +219,7 @@
   gap: var(--gap-3xs);
   text-align: left;
   font-size: var(--font-size-base);
-  color: var(--color-white);
+  color: var(--devicoio-black);
   font-family: var(--font-readex-pro);
   margin-top: 2rem;
 }

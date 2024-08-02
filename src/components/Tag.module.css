@@ -1,0 +1,16 @@
+.heroStrapline {
+  position: relative;
+  line-height: 123%;
+}
+.tag {
+  background-color: var(--color-gray-700);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-7xs);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--devicoio-royal-blue);
+  font-family: var(--font-readex-pro);
+}
