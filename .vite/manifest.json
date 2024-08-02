@@ -1,0 +1,161 @@
+{
+  "__vite-browser-external": {
+    "file": "assets/__vite-browser-external-BIHI7g3E.js",
+    "name": "__vite-browser-external",
+    "src": "__vite-browser-external",
+    "isDynamicEntry": true
+  },
+  "case-studies/all-links.json": {
+    "file": "assets/all-links-TfwVDxe1.js",
+    "name": "all-links",
+    "src": "case-studies/all-links.json",
+    "isDynamicEntry": true
+  },
+  "case-studies/kitsumon.json": {
+    "file": "assets/kitsumon-QeB7_JuH.js",
+    "name": "kitsumon",
+    "src": "case-studies/kitsumon.json",
+    "isDynamicEntry": true
+  },
+  "case-studies/mortgage-advisor.json": {
+    "file": "assets/mortgage-advisor-DkBspXxp.js",
+    "name": "mortgage-advisor",
+    "src": "case-studies/mortgage-advisor.json",
+    "isDynamicEntry": true
+  },
+  "case-studies/woof-avenue.json": {
+    "file": "assets/woof-avenue-BIrSRKd6.js",
+    "name": "woof-avenue",
+    "src": "case-studies/woof-avenue.json",
+    "isDynamicEntry": true
+  },
+  "code-pages/node.json": {
+    "file": "assets/node-CppoBrY9.js",
+    "name": "node",
+    "src": "code-pages/node.json",
+    "isDynamicEntry": true
+  },
+  "index.html": {
+    "file": "assets/app-B5oqQq7i.js",
+    "name": "app",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/pages/code-page/[code].tsx",
+      "src/pages/case-studies/[caseStudy].tsx",
+      "src/pages/services/[service].tsx"
+    ],
+    "css": [
+      "assets/app-D0B_90UI.css"
+    ],
+    "assets": [
+      "assets/MYRIADPRO-REGULAR-DQFfhlAL.OTF",
+      "assets/headercontainer@3x-D87CTUO0.png",
+      "assets/language-top-section@3x-rukHwSSp.png"
+    ]
+  },
+  "public/MYRIADPRO-REGULAR.OTF": {
+    "file": "assets/MYRIADPRO-REGULAR-DQFfhlAL.OTF",
+    "src": "public/MYRIADPRO-REGULAR.OTF"
+  },
+  "public/headercontainer@3x.png": {
+    "file": "assets/headercontainer@3x-D87CTUO0.png",
+    "src": "public/headercontainer@3x.png"
+  },
+  "public/language-top-section@3x.png": {
+    "file": "assets/language-top-section@3x-rukHwSSp.png",
+    "src": "public/language-top-section@3x.png"
+  },
+  "public/section@3x.png": {
+    "file": "assets/section@3x-C2O2RqjM.png",
+    "src": "public/section@3x.png"
+  },
+  "public/top-section1@3x.png": {
+    "file": "assets/top-section1@3x-B8_xWGw9.png",
+    "src": "public/top-section1@3x.png"
+  },
+  "public/top-section@3x.png": {
+    "file": "assets/top-section@3x-D2fCrbC9.png",
+    "src": "public/top-section@3x.png"
+  },
+  "services/design.json": {
+    "file": "assets/design-UKGNMHq3.js",
+    "name": "design",
+    "src": "services/design.json",
+    "isDynamicEntry": true
+  },
+  "services/software.json": {
+    "file": "assets/software-kST3BaUh.js",
+    "name": "software",
+    "src": "services/software.json",
+    "isDynamicEntry": true
+  },
+  "services/web3.json": {
+    "file": "assets/web3-CEETqK-_.js",
+    "name": "web3",
+    "src": "services/web3.json",
+    "isDynamicEntry": true
+  },
+  "src/pages/case-studies/[caseStudy].tsx": {
+    "file": "assets/_caseStudy_-Dwo6lItA.js",
+    "name": "_caseStudy_",
+    "src": "src/pages/case-studies/[caseStudy].tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ],
+    "dynamicImports": [
+      "__vite-browser-external",
+      "case-studies/all-links.json",
+      "case-studies/kitsumon.json",
+      "case-studies/mortgage-advisor.json",
+      "case-studies/woof-avenue.json"
+    ],
+    "css": [
+      "assets/_caseStudy_-HFllyBD-.css"
+    ],
+    "assets": [
+      "assets/top-section@3x-D2fCrbC9.png"
+    ]
+  },
+  "src/pages/code-page/[code].tsx": {
+    "file": "assets/_code_-WgZJW2j8.js",
+    "name": "_code_",
+    "src": "src/pages/code-page/[code].tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ],
+    "dynamicImports": [
+      "__vite-browser-external",
+      "code-pages/node.json"
+    ],
+    "css": [
+      "assets/_code_-CeJgjRMU.css"
+    ],
+    "assets": [
+      "assets/top-section1@3x-B8_xWGw9.png"
+    ]
+  },
+  "src/pages/services/[service].tsx": {
+    "file": "assets/_service_-CMtw1bOy.js",
+    "name": "_service_",
+    "src": "src/pages/services/[service].tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ],
+    "dynamicImports": [
+      "__vite-browser-external",
+      "services/design.json",
+      "services/software.json",
+      "services/web3.json"
+    ],
+    "css": [
+      "assets/_service_-DrMX4dGv.css"
+    ],
+    "assets": [
+      "assets/section@3x-C2O2RqjM.png"
+    ]
+  }
+}
