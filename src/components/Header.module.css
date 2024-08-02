@@ -95,6 +95,7 @@
   width: 244.7px;
   position: relative;
   height: 28.2px;
+  cursor: pointer;
 }
 .about,
 .contactUs {

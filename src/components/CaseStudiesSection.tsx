@@ -85,11 +85,13 @@ const CaseStudiesSection: FunctionComponent<CaseStudiesSectionType> = ({
           title="All Links Platform"
           description="Discover how Third Strand Studio developed All Links, an intuitive app like Linktree, streamlining social media presence for users."
           image="/image1@2x.png"
+          href="/case-studies/all-links"
         />
         <CaseStudyTile
-          title="MySitesLive Builder"
-          description="Learn how Third Strand Studio built MySitesLive, a website builder tailored for mortgage advisors in the USA, boosting their online presence."
-          image="/image2@2x.png"
+          title="Woof Avenue"
+          description="Learn how Third Strand Studio built Woof Avenue, a website builder tailored for dog groomers, boosting their online presence."
+          image="/image4@2x.png"
+          href="/case-studies/woof-avenue"
         />
       </div>
       <div className={styles.showcase01ContainerParent}>
@@ -97,11 +99,13 @@ const CaseStudiesSection: FunctionComponent<CaseStudiesSectionType> = ({
           title="Kitsumon"
           description="In Kitsumon, players embark on a quest to collect and trade their very own Kitsumon, each possessing distinctive traits, elements, abilities, and rarity levels. "
           image="/image3@2x.png"
+          href="/case-studies/kitsumon"
         />
         <CaseStudyTile
           title="Mortgage Builder"
           description="We crafted a dynamic one-page website, tailor-made for accredited mortgage advisors, enabling them to showcase their expertise with finesse. "
-          image="/image4@2x.png"
+          image="/image2@2x.png"
+          href="/case-studies/mortgage-advisor"
         />
       </div>
       <button

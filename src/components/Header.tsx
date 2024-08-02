@@ -34,7 +34,7 @@ const Header: FunctionComponent<HeaderType> = ({ className = "" }) => {
   return (
     <>
       <div className={[styles.desktopHeader, className].join(" ")}>
-        <div className={styles.frameParent}>
+        <div onClick={onHomeClick} className={styles.frameParent}>
           <div className={styles.rectangleParent}>
             <div className={styles.frameChild} />
             <div className={styles.frameItem} />

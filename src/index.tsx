@@ -16,7 +16,7 @@ import routes from "./scripts/routes";
 
 export const createRoot = ViteReactSSG(
   { routes, basename: import.meta.env.BASE_URL },
-  ({router, routes, isClient, initialState})=> { 
+  ({})=> { 
   },
   { }
 )

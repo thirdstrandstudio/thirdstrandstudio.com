@@ -7,6 +7,7 @@ export type CaseStudyTileType = {
   title?: string;
   description?: string;
   image?: string;
+  href?: string;
 };
 
 const CaseStudyTile: FunctionComponent<CaseStudyTileType> = ({
@@ -14,9 +15,11 @@ const CaseStudyTile: FunctionComponent<CaseStudyTileType> = ({
   title,
   description,
   image,
+  href
 }) => {
   const onShowcase01ContainerClick = useCallback(() => {
-    // Please sync "showcase_02" to the project
+    if(href)
+      window.location.href = href;
   }, []);
 
   useEffect(() => {
