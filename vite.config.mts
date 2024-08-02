@@ -9,5 +9,5 @@ export default defineConfig({
   plugins: [
     react()
   ],
-  base: "./",
+  base: "https://thirdstrandstudio.com",
 });
