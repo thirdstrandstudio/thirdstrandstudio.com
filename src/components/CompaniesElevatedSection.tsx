@@ -101,21 +101,6 @@ const CompaniesElevatedSection: FunctionComponent<
         <ClientLogo logo="/imperial-war-logo.svg" />
         <ClientLogo logo="/kitsumon-logo.svg" />
         <ClientLogo logo="/kodak-logo.svg" />
-        <div className={styles.clientLogo}>
-          <div className={styles.highwireLogo}>
-            <div className={styles.highwirePressIdyhialdfm21}>
-              <img className={styles.vectorIcon} alt="" src="/vector1.svg" />
-              <img className={styles.vectorIcon1} alt="" src="/vector2.svg" />
-              <img className={styles.groupIcon} alt="" src="/group.svg" />
-              <div className={styles.group}>
-                <img className={styles.groupIcon1} alt="" src="/group1.svg" />
-                <div className={styles.poweredBy}>{`Powered by `}</div>
-                <img className={styles.groupIcon2} alt="" src="/group2.svg" />
-                <img className={styles.groupIcon3} alt="" src="/group3.svg" />
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <button
         className={styles.showcase01Container}
