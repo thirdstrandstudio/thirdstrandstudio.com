@@ -10,5 +10,6 @@ export default defineConfig({
   plugins: [
     react()
   ],
-  base: import.meta.env.BASE_URL,
+  base: process.env.VITE_BASE_URL,
 });
+
