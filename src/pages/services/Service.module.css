@@ -855,9 +855,14 @@
 }
 @media screen and (max-width: 420px) {
   .softwareDevelopment1 {
-    font-size: 46px;
+    font-size: 44px;
     line-height: 52px;
   }
+
+  .learnHowWe {
+    font-size: 44px;
+  }
+
   .modeAppPicturepngIcon,
   .picture {
     align-self: stretch;
