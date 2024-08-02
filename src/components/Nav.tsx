@@ -40,8 +40,8 @@ const Nav: FunctionComponent<NavType> = ({ className = "" }) => {
   }, []);
 
   const onAboutTextClick = useCallback(() => {
-    // Please sync "about_us" to the project
-  }, []);
+    navigate("/about-us");
+  }, [navigate]);
 
   const onContactUsTextClick = useCallback(() => {
     navigate("/contact");
