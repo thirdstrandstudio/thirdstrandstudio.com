@@ -108,6 +108,7 @@
 }
 .about {
   line-height: 160%;
+  cursor: pointer;
 }
 .about,
 .contactUs,
