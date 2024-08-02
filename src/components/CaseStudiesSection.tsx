@@ -90,7 +90,7 @@ const CaseStudiesSection: FunctionComponent<CaseStudiesSectionType> = ({
         <CaseStudyTile
           title="Woof Avenue"
           description="Learn how Third Strand Studio built Woof Avenue, a website builder tailored for dog groomers, boosting their online presence."
-          image="/image4@2x.png"
+          image="/woof_thumbnail.webp"
           href="/case-studies/woof-avenue"
         />
       </div>
