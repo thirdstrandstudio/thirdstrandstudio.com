@@ -47,6 +47,10 @@ const Nav: FunctionComponent<NavType> = ({ className = "" }) => {
     navigate("/contact");
   }, [navigate]);
 
+  const onHomeClick = useCallback(() => {
+    navigate("/");
+  }, [navigate]);
+
   return (
     <div className={[styles.nav, className].join(" ")} data-animate-on-scroll>
       <div className={styles.frameParent}>
@@ -69,7 +73,7 @@ const Nav: FunctionComponent<NavType> = ({ className = "" }) => {
           src="/third-strand-studios1.svg"
         />
       </div>
-      <div className={styles.about}>Home</div>
+      <div onClick={onHomeClick} className={styles.about}>Home</div>
       <div className={styles.contactUs} onClick={onAboutTextClick}>
         About Us
       </div>
