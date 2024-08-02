@@ -54,9 +54,9 @@ const CodePage: FunctionComponent = () => {
             <div className={styles.workspace01}>
               <div className={styles.divider} />
             </div>
-            {articleSection.content.map((content, index) => (
+            {articleSection.content.map((content, i2) => (
               <div
-                key={`article-${index}-${index}`}
+                key={`article-${index}-${i2}`}
                 className={styles.titleDescription}
               >
                 <div className={styles.title}>{content.title}</div>
@@ -71,7 +71,7 @@ const CodePage: FunctionComponent = () => {
 
   const getSection = (section: QuestionAnswerSection, index: number) => {
     return (
-      <>
+      <div className={styles.outerSection} key={`outer-sec-${index}`}>
         <div key={`section-${index}`} className={styles.servicesParent}>
           <div className={styles.services}>
             <div className={styles.servicesTitle1}>{section.leftTitle}</div>
@@ -113,7 +113,7 @@ const CodePage: FunctionComponent = () => {
           </div>
         </div>
         <div key={`section-divider-${index}`} className={styles.divider3} />
-      </>
+      </div>
     );
   };
 
@@ -156,7 +156,7 @@ export async function loader({ params }: { params: Params<string> }) {
 export function getStaticPaths() {
   const codePages = import.meta.glob("/code-pages/*.json");
   const paths = Object.keys(codePages).map(
-    (path) => path.match(/\/code-pages\/(.*)\.json$/)?.[1] ?? ""
+    (path) => "/code/"+path.match(/\/code-pages\/(.*)\.json$/)?.[1]
   );
   return paths;
 }

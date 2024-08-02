@@ -7,7 +7,7 @@ export type NavType = {
   onClose?: () => void;
 };
 
-const Nav: FunctionComponent<NavType> = ({ className = "", onClose }) => {
+const Nav: FunctionComponent<NavType> = ({ className = "" }) => {
   const navigate = useNavigate();
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(

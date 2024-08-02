@@ -1,6 +1,4 @@
-import { FunctionComponent, useCallback, useEffect } from "react";
-import Header from "../components/Header";
-import { useNavigate } from "react-router-dom";
+import { FunctionComponent } from "react";
 import Blurb from "../components/Blurb";
 import ServiceTile from "../components/ServiceTile";
 import CaseStudiesSection from "../components/CaseStudiesSection";
@@ -8,9 +6,7 @@ import CompaniesElevatedSection from "../components/CompaniesElevatedSection";
 import ArticleLeft from "../components/ArticleLeft";
 import LanguageSection from "../components/LanguageSection";
 import BookAMeeting from "../components/BookAMeeting";
-import Footer from "../components/Footer";
 import styles from "./Homepage.module.css";
-import MainLayout from "../layouts/MainLayout";
 import MainLayoutWithContact from "../layouts/MainLayoutWithContact";
 
 const Homepage: FunctionComponent = () => {

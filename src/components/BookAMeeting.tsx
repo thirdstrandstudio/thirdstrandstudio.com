@@ -79,7 +79,7 @@ const BookAMeeting: FunctionComponent<BookAMeetingType> = ({
           </div>
         </div>
       </div>
-      <form target="_blank" action='https://forms.zohopublic.eu/digitaldnastudios361/form/ThirdStrandStudioContactForm/formperma/4kSCS__NtzTgkIB92PZEdc_u8VfHSGoT_TUR8zpu6xQ/htmlRecords/submit' name='form' method='POST' acceptCharset='UTF-8' encType='multipart/form-data' id='form' className={styles.contactForm}>
+      <form onSubmit={handleSubmit} target="_blank" action='https://forms.zohopublic.eu/digitaldnastudios361/form/ThirdStrandStudioContactForm/formperma/4kSCS__NtzTgkIB92PZEdc_u8VfHSGoT_TUR8zpu6xQ/htmlRecords/submit' name='form' method='POST' acceptCharset='UTF-8' encType='multipart/form-data' id='form' className={styles.contactForm}>
         <input type="hidden" name="zf_referrer_name" value="" />
         <input type="hidden" name="zf_redirect_url" value="" />
         <input type="hidden" name="zc_gad" value="" />

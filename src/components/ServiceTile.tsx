@@ -1,6 +1,5 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
 import styles from "./ServiceTile.module.css";
-import { useNavigate } from "react-router-dom";
 
 export type ServiceTileType = {
   className?: string;

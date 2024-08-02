@@ -7,6 +7,7 @@ import AboutUs from '../pages/AboutUs';
 const routes: RouteRecord[] = [
   {
     path: '/',
+    index: true,
     element: <Homepage />
   },
   {

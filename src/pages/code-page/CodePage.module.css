@@ -507,6 +507,15 @@
   justify-content: flex-start;
   gap: var(--gap-41xl);
 }
+
+.outerSection {
+  gap: 2rem;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-self: center;
+}
+
 .content {
   align-self: stretch;
   padding: 0 var(--padding-xs);

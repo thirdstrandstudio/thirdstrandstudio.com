@@ -1,9 +1,7 @@
-import { FunctionComponent, useEffect } from "react";
-import Header from "../../components/Header";
+import { FunctionComponent } from "react";
 import Tag, { TagType } from "../../components/Tag";
 import Blurb, { BlurbType } from "../../components/Blurb";
 import BookAMeeting from "../../components/BookAMeeting";
-import Footer from "../../components/Footer";
 import styles from "./Showcase.module.css";
 import MainLayoutWithContact from "../../layouts/MainLayoutWithContact";
 import { Params, useLoaderData } from "react-router-dom";
@@ -43,11 +41,8 @@ const Showcase: FunctionComponent = () => {
         {blurb && <Blurb {...blurb} />}
         {sections &&
           sections.map((section, index) => (
-            <>
-              <div
-                key={`section-${index}`}
-                className={styles.showcaseContent02}
-              >
+            <div className={styles.showcaseContent02} key={`section-${index}`}>
+              <div className={styles.showcaseContent02}>
                 {section.title && (
                   <b className={styles.heroStrapline4}>{section.title}</b>
                 )}
@@ -65,7 +60,7 @@ const Showcase: FunctionComponent = () => {
                   src={section.image}
                 />
               )}
-            </>
+            </div>
           ))}
 
         <BookAMeeting />
@@ -81,7 +76,6 @@ export const entry = "src/pages/case-studies/[caseStudy].tsx";
 
 export async function loader({ params }: { params: Params<string> }) {
   const fs = await import("node:fs");
-  const path = await import("node:path");
   const page = params["caseStudy"];
   const cwd = process.cwd();
 
@@ -92,11 +86,9 @@ export async function loader({ params }: { params: Params<string> }) {
 }
 
 export function getStaticPaths() {
-  // Change the glob pattern to match JSON files in public/code-pages
   const codePages = import.meta.glob("/case-studies/*.json");
-  // Extract the file names without the .json extension
   const paths = Object.keys(codePages).map(
-    (path) => path.match(/\/case-studies\/(.*)\.json$/)?.[1] ?? ""
+    (path) => "/case-studies/" + path.match(/\/case-studies\/(.*)\.json$/)?.[1]
   );
   return paths;
 }

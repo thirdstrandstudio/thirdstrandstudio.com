@@ -319,7 +319,7 @@ export async function loader({ params }: { params: Params<string> }) {
 export function getStaticPaths() {
   const codePages = import.meta.glob("/services/*.json");
   const paths = Object.keys(codePages).map(
-    (path) => path.match(/\/services\/(.*)\.json$/)?.[1] ?? ""
+    (path) => "/services/"+path.match(/\/services\/(.*)\.json$/)?.[1]
   );
   return paths;
 }

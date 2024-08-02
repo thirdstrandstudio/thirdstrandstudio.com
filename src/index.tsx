@@ -1,7 +1,4 @@
-import React from "react";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter } from "react-router-dom";
 import "./global.css";
 import { ViteReactSSG } from "vite-react-ssg";
 import routes from "./scripts/routes";
@@ -15,8 +12,9 @@ import routes from "./scripts/routes";
 // );
 
 export const createRoot = ViteReactSSG(
-  { routes, basename: import.meta.env.BASE_URL },
+  { routes, basename: "/" },
   ({})=> { 
+    
   },
   { }
 )
