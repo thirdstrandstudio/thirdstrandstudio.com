@@ -36,7 +36,7 @@
     "isDynamicEntry": true
   },
   "index.html": {
-    "file": "assets/app-B5oqQq7i.js",
+    "file": "assets/app-8LP0jm22.js",
     "name": "app",
     "src": "index.html",
     "isEntry": true,
@@ -46,7 +46,7 @@
       "src/pages/services/[service].tsx"
     ],
     "css": [
-      "assets/app-D0B_90UI.css"
+      "assets/app-D5T_4Zv5.css"
     ],
     "assets": [
       "assets/MYRIADPRO-REGULAR-DQFfhlAL.OTF",
@@ -97,7 +97,7 @@
     "isDynamicEntry": true
   },
   "src/pages/case-studies/[caseStudy].tsx": {
-    "file": "assets/_caseStudy_-Dwo6lItA.js",
+    "file": "assets/_caseStudy_-ChO1t2Pi.js",
     "name": "_caseStudy_",
     "src": "src/pages/case-studies/[caseStudy].tsx",
     "isDynamicEntry": true,
@@ -112,14 +112,14 @@
       "case-studies/woof-avenue.json"
     ],
     "css": [
-      "assets/_caseStudy_-HFllyBD-.css"
+      "assets/_caseStudy_-Bbg6Zufe.css"
     ],
     "assets": [
       "assets/top-section@3x-D2fCrbC9.png"
     ]
   },
   "src/pages/code-page/[code].tsx": {
-    "file": "assets/_code_-WgZJW2j8.js",
+    "file": "assets/_code_-BXtls4lD.js",
     "name": "_code_",
     "src": "src/pages/code-page/[code].tsx",
     "isDynamicEntry": true,
@@ -131,14 +131,14 @@
       "code-pages/node.json"
     ],
     "css": [
-      "assets/_code_-CeJgjRMU.css"
+      "assets/_code_-CQS2k_Yk.css"
     ],
     "assets": [
       "assets/top-section1@3x-B8_xWGw9.png"
     ]
   },
   "src/pages/services/[service].tsx": {
-    "file": "assets/_service_-CMtw1bOy.js",
+    "file": "assets/_service_-DaaVIp1n.js",
     "name": "_service_",
     "src": "src/pages/services/[service].tsx",
     "isDynamicEntry": true,
@@ -152,7 +152,7 @@
       "services/web3.json"
     ],
     "css": [
-      "assets/_service_-DrMX4dGv.css"
+      "assets/_service_-BpB1ZUdB.css"
     ],
     "assets": [
       "assets/section@3x-C2O2RqjM.png"
