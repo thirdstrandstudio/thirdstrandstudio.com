@@ -5,6 +5,7 @@ import ButtonComponent, {
   ButtonComponentProps,
 } from "../components/ButtonComponent";
 import Footer from "../components/Footer";
+import { Head } from "vite-react-ssg";
 
 export interface StrapLineData {
   title: string;
@@ -20,7 +21,12 @@ interface MainLayoutProps {
   strapLineData?: StrapLineData;
 }
 
-const MainLayout: React.FC<MainLayoutProps> = ({ children, strapLineData, headerChildren, headerImage }) => {
+const MainLayout: React.FC<MainLayoutProps> = ({
+  children,
+  strapLineData,
+  headerChildren,
+  headerImage,
+}) => {
   const backgroundImageStyling = headerImage
     ? { backgroundImage: `url(${headerImage})` }
     : {};
@@ -55,6 +61,18 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children, strapLineData, header
   }, []);
   return (
     <div className={styles.mainContainer}>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000" />
+        <meta property="og:image" content="/thumbnail.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta
+          name="description"
+          content="Tailored software for the extraordinary. Providing companies access to their technology goals, supporting brands & creators to step into Web3."
+        />
+        <title>Third Strand Studio</title>
+      </Head>
       <div style={backgroundImageStyling} className={styles.headerContainer}>
         <Header />
         {headerChildren}
