@@ -282,7 +282,7 @@
   align-self: stretch;
   align-items: center;
   padding: var(--padding-21xl) var(--padding-xs) var(--padding-41xl);
-  background-image: url(/public/top-section1@3x.png);
+  background-image: url(/top-section1@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;

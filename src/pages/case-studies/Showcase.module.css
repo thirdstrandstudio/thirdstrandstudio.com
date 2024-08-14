@@ -58,7 +58,7 @@
   align-items: center;
   padding: var(--padding-21xl) 0 var(--padding-41xl);
   gap: var(--gap-3xs);
-  background-image: url(/public/top-section@3x.png);
+  background-image: url(/top-section@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;

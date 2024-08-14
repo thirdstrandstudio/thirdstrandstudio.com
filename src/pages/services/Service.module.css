@@ -178,7 +178,7 @@
   padding: var(--padding-5xl) var(--padding-17xl) 120px;
   box-sizing: border-box;
   gap: 64px;
-  background-image: url(/public/section@3x.png);
+  background-image: url(/section@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
