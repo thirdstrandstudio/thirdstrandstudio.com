@@ -6,19 +6,19 @@
     "isDynamicEntry": true
   },
   "case-studies/all-links.json": {
-    "file": "assets/all-links-TfwVDxe1.js",
+    "file": "assets/all-links-DJpoVi4q.js",
     "name": "all-links",
     "src": "case-studies/all-links.json",
     "isDynamicEntry": true
   },
   "case-studies/kitsumon.json": {
-    "file": "assets/kitsumon-QeB7_JuH.js",
+    "file": "assets/kitsumon-DWBXxbW7.js",
     "name": "kitsumon",
     "src": "case-studies/kitsumon.json",
     "isDynamicEntry": true
   },
   "case-studies/mortgage-advisor.json": {
-    "file": "assets/mortgage-advisor-DkBspXxp.js",
+    "file": "assets/mortgage-advisor-C8FCKaRc.js",
     "name": "mortgage-advisor",
     "src": "case-studies/mortgage-advisor.json",
     "isDynamicEntry": true
@@ -30,13 +30,13 @@
     "isDynamicEntry": true
   },
   "code-pages/node.json": {
-    "file": "assets/node-CppoBrY9.js",
+    "file": "assets/node-eA_dRmka.js",
     "name": "node",
     "src": "code-pages/node.json",
     "isDynamicEntry": true
   },
   "index.html": {
-    "file": "assets/app-BQjs9hRM.js",
+    "file": "assets/app-Ckmw_dlB.js",
     "name": "app",
     "src": "index.html",
     "isEntry": true,
@@ -46,37 +46,8 @@
       "src/pages/services/[service].tsx"
     ],
     "css": [
-      "assets/app-BAxsiR-Z.css"
-    ],
-    "assets": [
-      "assets/MYRIADPRO-REGULAR-DQFfhlAL.OTF",
-      "assets/headercontainer@3x-D87CTUO0.png",
-      "assets/language-top-section@3x-rukHwSSp.png"
+      "assets/app-55eH0OGB.css"
     ]
-  },
-  "public/MYRIADPRO-REGULAR.OTF": {
-    "file": "assets/MYRIADPRO-REGULAR-DQFfhlAL.OTF",
-    "src": "public/MYRIADPRO-REGULAR.OTF"
-  },
-  "public/headercontainer@3x.png": {
-    "file": "assets/headercontainer@3x-D87CTUO0.png",
-    "src": "public/headercontainer@3x.png"
-  },
-  "public/language-top-section@3x.png": {
-    "file": "assets/language-top-section@3x-rukHwSSp.png",
-    "src": "public/language-top-section@3x.png"
-  },
-  "public/section@3x.png": {
-    "file": "assets/section@3x-C2O2RqjM.png",
-    "src": "public/section@3x.png"
-  },
-  "public/top-section1@3x.png": {
-    "file": "assets/top-section1@3x-B8_xWGw9.png",
-    "src": "public/top-section1@3x.png"
-  },
-  "public/top-section@3x.png": {
-    "file": "assets/top-section@3x-D2fCrbC9.png",
-    "src": "public/top-section@3x.png"
   },
   "services/design.json": {
     "file": "assets/design-UKGNMHq3.js",
@@ -85,7 +56,7 @@
     "isDynamicEntry": true
   },
   "services/software.json": {
-    "file": "assets/software-kST3BaUh.js",
+    "file": "assets/software-Bj-99t0T.js",
     "name": "software",
     "src": "services/software.json",
     "isDynamicEntry": true
@@ -97,7 +68,7 @@
     "isDynamicEntry": true
   },
   "src/pages/case-studies/[caseStudy].tsx": {
-    "file": "assets/_caseStudy_-CBxjF7kR.js",
+    "file": "assets/_caseStudy_-HurRwCGU.js",
     "name": "_caseStudy_",
     "src": "src/pages/case-studies/[caseStudy].tsx",
     "isDynamicEntry": true,
@@ -112,14 +83,11 @@
       "case-studies/woof-avenue.json"
     ],
     "css": [
-      "assets/_caseStudy_-CkbNaZdX.css"
-    ],
-    "assets": [
-      "assets/top-section@3x-D2fCrbC9.png"
+      "assets/_caseStudy_-BOB-Gqy_.css"
     ]
   },
   "src/pages/code-page/[code].tsx": {
-    "file": "assets/_code_-BTBPH3Zd.js",
+    "file": "assets/_code_-m2K2CSQG.js",
     "name": "_code_",
     "src": "src/pages/code-page/[code].tsx",
     "isDynamicEntry": true,
@@ -131,14 +99,11 @@
       "code-pages/node.json"
     ],
     "css": [
-      "assets/_code_-DumcSJoq.css"
-    ],
-    "assets": [
-      "assets/top-section1@3x-B8_xWGw9.png"
+      "assets/_code_-BXwIRDF3.css"
     ]
   },
   "src/pages/services/[service].tsx": {
-    "file": "assets/_service_-Dkm_qPqr.js",
+    "file": "assets/_service_-rVQnQ_Jz.js",
     "name": "_service_",
     "src": "src/pages/services/[service].tsx",
     "isDynamicEntry": true,
@@ -152,10 +117,7 @@
       "services/web3.json"
     ],
     "css": [
-      "assets/_service_-B7B7NYTW.css"
-    ],
-    "assets": [
-      "assets/section@3x-C2O2RqjM.png"
+      "assets/_service_-DFwcvZeE.css"
     ]
   }
 }
